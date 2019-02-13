@@ -1,8 +1,8 @@
 import numpy as np
-from keras.layers.core import  Lambda, Merge
+from keras.layers import  Lambda, Merge
 from keras.layers.convolutional import Convolution2D
 from keras import backend as K
-from keras.regularizers import l1l2, Regularizer
+from keras.regularizers import Regularizer
 from keras.engine import Layer
 
 def crosschannelnormalization(alpha = 1e-4, k=2, beta=0.75, n=5,**kwargs):
